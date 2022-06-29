@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang=eng>
+<head>
+<title>Login</title>
+
+<style>
+body {
+	font-family: Proxima Nova, Helvetica Neue, Arial, Helvetica, sans-serif;
+	margin: 0;
+	background-color:2B2B2B;
+	font-style: normal;
+	font-weight: 400;
+}
+
+form {
+	border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+	width: 90%;
+	padding: 15px 15px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+button {
+	background-color:#2B2B2B;
+	color: white;
+	padding: 15px 15px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+/* set a hover effect for the button*/
+button:hover {
+	background-color: #ddd;
+	color: black; 
+}
+.create {
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 15px;
+	text-decoration: none;
+}
+
+.create:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.imgcontainer {
+	text-align: center;
+	margin: 24px 0 12px 0;
+}
+
+img.avatar {
+	width: 22%;
+	border-radius: 35%;
+}
+</style>
+
+</head>
+
+<body>
+
+	<h2>Login to Begin!</h2>
+
+	<form action="/action_page.php" method="post">
+		<div class="imgcontainer">
+			<img
+				src="https://www.pngitem.com/pimgs/m/273-2738719_user-login-icon-png-transparent-background-login-icon.png"
+				alt="Avatar" class="avatar">
+		</div>
+		<div class="container">
+			<label><b>Username</b></label> <input type="text"
+				placeholder="Enter Username" name="uname" required> <label><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="psw"
+				required>
+
+			<button type="submit">Login</button>
+			<input type="checkbox" checked="checked"> Remember me<br><a href="Register.html">Create Account</a>
+		</div>
+		
+		
+		
+	
+
+	</form>
+
+</body>
+
+</html>
